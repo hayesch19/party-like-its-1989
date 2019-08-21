@@ -23,25 +23,24 @@ export class Movie extends Component {
 
   render() {
     return (
-      <section>
-        <div className="hero-movie">
-          <div>
-            {this.state.movieData.map(results => {
-              return (
-                <p key={results.id}>
-                  {results['title']}
-                  <img
-                    src={
-                      ['https://image.tmdb.org/t/p/w185_and_h278_bestv2'] +
-                      results['poster_path']
-                    }
-                    alt="MoviePoster"
-                  />
-                  {results['overview']}
-                </p>
-              )
-            })}
-          </div>
+      <section className="card-area">
+        <div>
+          {this.state.movieData.map(results => {
+            return (
+              <div className="movie-card" key={results.id}>
+                <p className="movie-title">{results['title']}</p>
+                <img
+                  className="movie-poster"
+                  src={
+                    ['https://image.tmdb.org/t/p/w185_and_h278_bestv2'] +
+                    results['poster_path']
+                  }
+                  alt="MoviePoster"
+                />
+                <p className="movie-overview">{results['overview']}</p>
+              </div>
+            )
+          })}
         </div>
       </section>
     )

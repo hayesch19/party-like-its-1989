@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -9,4 +11,58 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-image: url('./images/80sWallpaper.jpg');
+  font-family: 'Space Mono', monospace;
+}
+
+header {
+  border-style: ridge;
+  border-width: 10px;
+  background-color: #00ff00d5;
+  border-color: #c200c2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #c200c2;
+}
+
+/***** Classes *****/
+
+.card-area {
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.movie-card {
+  border-style: ridge;
+  border-width: 10px;
+  border-color: springgreen;
+  padding: 1rem;
+  background-color: #a503bbc9;
+  margin: 1rem;
+}
+
+.movie-title {
+  text-align: center;
+  font-size: 2rem;
+  color: springgreen;
+}
+
+.movie-poster {
+  height: 25rem;
+}
+
+.movie-overview {
+  font-size: 1.1rem;
+  color: springgreen;
 }
