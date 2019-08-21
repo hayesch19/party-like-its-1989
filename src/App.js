@@ -1,9 +1,16 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import Movie from './components/Movie.jsx'
 
 class App extends Component {
   render() {
-    return <HelloWorld />
+    return (
+      <main>
+        <header>
+          <h1>PARTY LIKE IT'S 1989!!</h1>
+        </header>
+        <Movie />
+      </main>
+    )
   }
 }
 
