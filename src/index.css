@@ -34,6 +34,10 @@ header {
 
 /***** Classes *****/
 
+.powbox {
+  height: 4rem;
+}
+
 .card-area {
   padding: 0%;
   display: flex;
@@ -71,4 +75,8 @@ header {
 .release-date {
   font-size: 1.1rem;
   color: springgreen;
+}
+
+.unicorn {
+  height: 2rem;
 }
