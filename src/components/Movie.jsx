@@ -38,6 +38,9 @@ export class Movie extends Component {
                   alt="MoviePoster"
                 />
                 <p className="movie-overview">{results['overview']}</p>
+                <p className="release-date">
+                  Release Date:{results['release_date']}
+                </p>
               </div>
             )
           })}
